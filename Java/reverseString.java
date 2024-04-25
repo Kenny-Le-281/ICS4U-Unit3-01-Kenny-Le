@@ -11,7 +11,7 @@ import java.util.Scanner;
 /**
 * This is the program.
 */
-final class Reverse {
+final class reverseString {
     /**
     * Prevent instantiation.
     * Throw an exception IllegalStateException.
@@ -20,7 +20,7 @@ final class Reverse {
     * @throws IllegalStateException if this is ever called
     *
     */
-    private Reverse() {
+    private reverseString() {
         throw new IllegalStateException("Cannot be instantiated");
     }
 
