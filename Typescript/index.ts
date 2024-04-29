@@ -11,7 +11,7 @@ import { createPrompt } from 'bun-promptx'
 // Reverses strings using recursion.
 function reverseString(stringToReverse: string): string {
   if (stringToReverse == "") {
-    return ""
+    return stringToReverse
   } else {
     let firstCharacter: string = stringToReverse[0]
     let restOfString: string = stringToReverse.slice(1, stringToReverse.length)
@@ -20,8 +20,10 @@ function reverseString(stringToReverse: string): string {
   }
 }
 
+// Asks for user input
 const selectedString = createPrompt('Enter a string to reverse: ').value
 
+// Shows the original word
 console.log(`The reversed string is ${reverseString(selectedString)}`);
 
 console.log('\nDone.')
